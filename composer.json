@@ -1,0 +1,36 @@
+{
+  "name": "khakimjanovich/translator",
+  "description": "Google translator package to translate everything and storing to database",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "khkaimjanovich",
+      "email": "yunusalikhakimjanovich@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^6.17",
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "INBRAIN\\TP\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "INBRAIN\\TP\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "INBRAIN\\TP\\Providers\\TranslatorServiceProvider"
+      ]
+    }
+  }
+}
